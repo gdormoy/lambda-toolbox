@@ -1,7 +1,7 @@
 import sys
 import logging
 
-import MySQLdb
+import pymysql.cursors
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -9,7 +9,7 @@ logger.setLevel(logging.INFO)
 
 def create_connection(hostname, username, password, database):
     try:
-        db = MySQLdb.connect(hostname, user=username,
+        db = pymysql.connect(hostname, user=username,
                                passwd=password, db=database, connect_timeout=10)
     except:
         logger.error("ERROR: Unexpected error: Could not connect to MySql instance.")
