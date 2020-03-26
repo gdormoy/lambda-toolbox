@@ -14,7 +14,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/gdormoy/lambda-toolbox",
-    package=setuptools.find_packages(),
+    packages=setuptools.find_packages(),
     install_requires=libs,
     classifiers=[
         "Programming Language :: Python :: 3",
