@@ -9,6 +9,7 @@ setuptools.setup(
     name="lambda-toolbox-sdk",
     version='1.0.0',
     author="Guillaume Dormoy",
+    author_email="dormoy.guillaume@gmail.com",
     description="A set of module for providing a common way of working with external components",
     long_description=long_description,
     long_description_content_type="text/markdown",
